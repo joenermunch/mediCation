@@ -51,6 +51,7 @@ header {
 
 main {
   height: 80vh;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -104,8 +105,33 @@ footer {
 }
 
 .event {
-  &::after {
-    margin: 10px;
-    content: "⏸️";
+  color: red;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+  }
+
+  main {
+    height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    button {
+      padding: 10px;
+      width: 100px;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+    }
   }
 }

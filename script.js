@@ -2,10 +2,18 @@ const aboutButton = document.querySelector(".about-btn");
 const aboutSection = document.querySelector(".about");
 const musicBtn = document.querySelector(".music");
 
-aboutButton.addEventListener("click", () => {
-  aboutSection.classList.toggle("on");
-});
-
 musicBtn.addEventListener("click", () => {
-  musicBtn.classList.add("event");
+  if (!musicBtn.classList.contains("event")) {
+    alert("hi");
+    musicBtn.classList.add("event");
+  }
+
+  musicBtn.addEventListener("click", () => {
+    if (musicBtn.classList.contains("event")) {
+      musicBtn.classList.remove("event");
+    } else {
+      musicBtn.classList.add("event");
+      alert(`boo`);
+    }
+  });
 });
