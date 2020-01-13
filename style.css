@@ -1,0 +1,109 @@
+body {
+  background-color: #c6e377;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 35px;
+  height: 10vh;
+}
+
+header ul {
+  list-style: none;
+}
+
+header button {
+  outline: none;
+  font-family: "Niramit", sans-serif;
+  text-shadow: 5px 2px 10px #729d39;
+  color: white;
+  font-weight: 900;
+  -webkit-box-shadow: 1px 1px 10px #fbfad3;
+          box-shadow: 1px 1px 10px #fbfad3;
+  font-size: 16px;
+  padding: 15px 35px 15px 35px;
+  background: none;
+  border: 1px solid #fbfad3;
+  border-radius: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+}
+
+main {
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main button {
+  color: white;
+  font-family: "Niramit", sans-serif;
+  padding: 50px;
+  height: 200px;
+  width: 200px;
+  margin: 10px;
+  border-radius: 100px;
+  -webkit-box-shadow: 1px 1px 10px #fbfad3;
+          box-shadow: 1px 1px 10px #fbfad3;
+  font-size: 16px;
+  background: none;
+  border: 1px solid #fbfad3;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+main button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+}
+
+.about {
+  height: 80vh;
+}
+
+.on {
+  display: none;
+}
+
+.about {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer {
+  height: 7vh;
+  background-color: red;
+}
+/*# sourceMappingURL=style.css.map */
