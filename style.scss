@@ -7,6 +7,7 @@ $darkgreen: #36622b;
 *::before,
 *::after {
   box-sizing: border-box;
+  outline: none;
 }
 
 body {
@@ -33,7 +34,7 @@ header {
     text-shadow: 5px 2px 10px $midgreen;
     color: white;
     font-weight: 900;
-
+    margin-top: 50px;
     box-shadow: 1px 1px 10px $mybeige;
     font-size: 16px;
     padding: 15px 35px 15px 35px;
@@ -62,13 +63,13 @@ main {
     padding: 50px;
     height: 200px;
     width: 200px;
-    margin: 10px;
+    margin: 15px;
     border-radius: 100px;
     box-shadow: 1px 1px 10px $mybeige;
     font-size: 16px;
     background: none;
     border: 1px solid $mybeige;
-    transition: 0.3s;
+    transition: 1s;
     display: flex;
     flex-direction: column;
 
@@ -77,7 +78,7 @@ main {
     justify-content: center;
 
     &:hover {
-      transform: scale(1.1);
+
       cursor: pointer;
     }
   }
@@ -105,7 +106,24 @@ footer {
 }
 
 .event {
-  color: red;
+  color: $darkgreen;
+  animation: event 2.2s infinite ease-in-out;
+
+
+}
+
+@keyframes event {
+  0% {
+    transform: scale(1);
+    box-shadow: 1px 1px 10px $mybeige;
+  }
+
+  50% {
+    transform: scale(1.1);
+    box-shadow: 1px 1px 25px white;
+    color: $midgreen;
+  }
+
 }
 
 @media only screen and (max-width: 600px) {
