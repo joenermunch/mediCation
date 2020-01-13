@@ -1,4 +1,15 @@
+@charset "UTF-8";
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
   background-color: #c6e377;
 }
 
@@ -13,7 +24,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   margin-right: 35px;
-  height: 10vh;
+  max-height: 10vh;
 }
 
 header ul {
@@ -71,16 +82,25 @@ main button {
   border: 1px solid #fbfad3;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 main button:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   cursor: pointer;
-}
-
-.about {
-  height: 80vh;
 }
 
 .on {
@@ -103,7 +123,22 @@ main button:hover {
 }
 
 footer {
-  height: 7vh;
-  background-color: red;
+  height: 10vh;
+  color: #fbfad3;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.event::after {
+  margin: 10px;
+  content: "⏸️";
 }
 /*# sourceMappingURL=style.css.map */

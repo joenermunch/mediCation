@@ -3,7 +3,16 @@ $lightgreen: #c6e377;
 $midgreen: #729d39;
 $darkgreen: #36622b;
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
   background-color: $lightgreen;
 }
 
@@ -12,7 +21,8 @@ header {
   justify-content: flex-end;
   align-items: center;
   margin-right: 35px;
-  height: 10vh;
+  max-height: 10vh;
+
   ul {
     list-style: none;
   }
@@ -58,16 +68,18 @@ main {
     background: none;
     border: 1px solid $mybeige;
     transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
 
     &:hover {
       transform: scale(1.1);
       cursor: pointer;
     }
   }
-}
-
-.about {
-  height: 80vh;
 }
 
 .on {
@@ -83,6 +95,17 @@ main {
 }
 
 footer {
-  height: 7vh;
-  background-color: red;
+  height: 10vh;
+  color: #fbfad3;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.event {
+  &::after {
+    margin: 10px;
+    content: "⏸️";
+  }
 }
