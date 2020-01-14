@@ -4,6 +4,11 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   outline: none;
+  font-family: "Niramit", sans-serif;
+}
+
+a {
+  color: inherit;
 }
 
 body {
@@ -36,7 +41,6 @@ header button {
   font-family: "Niramit", sans-serif;
   text-shadow: 5px 2px 10px #729d39;
   color: white;
-  font-weight: 900;
   margin-top: 50px;
   -webkit-box-shadow: 1px 1px 10px #fbfad3;
           box-shadow: 1px 1px 10px #fbfad3;
@@ -108,17 +112,19 @@ main button:hover {
 
 .about {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  height: 80vh;
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fbfad3;
+  padding: 30px;
+  font-size: 20px;
 }
 
 footer {

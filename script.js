@@ -1,5 +1,6 @@
 const aboutButton = document.querySelector(".about-btn");
 const aboutSection = document.querySelector(".about");
+const mainSection = document.querySelector("main");
 const musicBtn = document.querySelector(".music");
 const soundBtn = document.querySelectorAll(".sound");
 const audioRain = document.getElementById("audio-rain");
@@ -63,4 +64,14 @@ soundBtn.forEach(button => {
       }
     });
   });
+});
+
+aboutButton.addEventListener("click", () => {
+  if (mainSection.style.display !== "none") {
+    mainSection.style.display = "none";
+    aboutSection.style.display = "flex";
+  } else {
+    mainSection.style.display = "flex";
+    aboutSection.style.display = "none";
+  }
 });

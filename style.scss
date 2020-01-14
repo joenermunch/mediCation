@@ -8,6 +8,11 @@ $darkgreen: #36622b;
 *::after {
   box-sizing: border-box;
   outline: none;
+  font-family: "Niramit", sans-serif;
+}
+
+a {
+  color: inherit;
 }
 
 body {
@@ -33,7 +38,7 @@ header {
     font-family: "Niramit", sans-serif;
     text-shadow: 5px 2px 10px $midgreen;
     color: white;
-    font-weight: 900;
+
     margin-top: 50px;
     box-shadow: 1px 1px 10px $mybeige;
     font-size: 16px;
@@ -90,10 +95,15 @@ main {
 
 .about {
   width: 100%;
-  display: flex;
+  height: 80vh;
+  display: none;
   flex-direction: column;
   text-align: center;
-  align-items: center;
+  justify-content: center;
+  color: $mybeige;
+  padding: 30px;
+  font-size: 20px;
+
 }
 
 footer {
