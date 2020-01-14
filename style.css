@@ -214,7 +214,7 @@ footer {
 
 /* leaf animations */
 #leaves {
-  position: relative;
+  position: fixed;
   top: -50px;
   width: 100%;
   text-align: right;
