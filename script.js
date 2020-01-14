@@ -1,17 +1,20 @@
 const aboutButton = document.querySelector(".about-btn");
 const aboutSection = document.querySelector(".about");
 const musicBtn = document.querySelector(".music");
+const soundBtn = document.querySelectorAll(".sound");
 
-musicBtn.addEventListener("click", () => {
-  if (!musicBtn.classList.contains("event")) {
-    musicBtn.classList.add("event");
-  }
-
-  musicBtn.addEventListener("click", () => {
-    if (musicBtn.classList.contains("event")) {
-      musicBtn.classList.remove("event");
-    } else {
-      musicBtn.classList.add("event");
+soundBtn.forEach(button => {
+  button.addEventListener("click", () => {
+    if (!button.classList.contains("event")) {
+      button.classList.add("event");
     }
+
+    button.addEventListener("click", () => {
+      if (button.classList.contains("event")) {
+        button.classList.remove("event");
+      } else {
+        button.classList.add("event");
+      }
+    });
   });
 });
